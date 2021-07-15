@@ -7,9 +7,11 @@ import {
   TextInput,
   Title,
   Form,
+  Side,
 } from "../styles/Login";
+import {ButtonCadastrar} from "../components/";
 
-export default function Login() {
+export default function Cadastrar() {
   const navigation = useNavigation();
   function handleCadastrar() {
     navigation.navigate("Cadastrar");
@@ -20,6 +22,11 @@ export default function Login() {
   return (
     <Container>
       <Form>
+        <Title>AllCourtMap</Title>
+        <FormRow>
+          <Label>Nome</Label>
+          <TextInput placeholder="nome"></TextInput>
+        </FormRow>
         <FormRow>
           <Label>E-mail</Label>
           <TextInput placeholder="e-mail"></TextInput>
@@ -29,6 +36,10 @@ export default function Login() {
           <TextInput placeholder="senha"></TextInput>
         </FormRow>
       </Form>
+      <Side>
+        <ButtonCadastrar title="Cadastrar" onPress={handleCadastrar} />
+        <ButtonCadastrar title="Login" onPress={handleCadastrar}/>
+      </Side>
     </Container>
   );
 }

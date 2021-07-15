@@ -7,7 +7,8 @@ const Drawer = createDrawerNavigator();
 export default function App(){
     return (
         <Drawer.Navigator screenOptions={{headerShown: true}}>
-            
+            {/* <Drawer.Screen name="Screen" component={}/>
+            <Drawer.Screen name="Screen" component={}/> */}
         </Drawer.Navigator>
     );
 }

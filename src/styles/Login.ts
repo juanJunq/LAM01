@@ -9,7 +9,7 @@ export const Container = styled.View`
 export const Title = styled.Text`
   font-size: 36px;
   color: ${colors.black};
-  font-weight: 500;
+  font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 `
@@ -30,4 +30,12 @@ export const TextInput = styled.TextInput`
   margin-left: 5px;
   margin-bottom: 5px;
   width: 65%;
+`
+export const Image = styled.Image`
+  
+`
+
+export const Side = styled.View`
+  flex-direction: row;
+  
 `

@@ -6,6 +6,8 @@ export const ButtonStyle = styled.TouchableOpacity`
     border-radius: 10px;
     margin-top: 10px;
     font-size: 10px;
+    margin-left: 45px;
+    margin-right: 20px;
 `
 export const ButtonStyleText = styled.Text`
     color: ${colors.white};

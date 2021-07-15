@@ -8,6 +8,8 @@ import {
   Title,
   Form,
 } from "../styles/Login";
+import {Button, ButtonText} from "../components";
+import { ButtonStyleTextDiv } from "../components/ButtonText/styles";
 
 export default function Login() {
   const navigation = useNavigation();
@@ -20,6 +22,7 @@ export default function Login() {
   return (
     <Container>
       <Form>
+        <Title>AllCourtMap</Title>
         <FormRow>
           <Label>E-mail</Label>
           <TextInput placeholder="e-mail"></TextInput>
@@ -29,6 +32,11 @@ export default function Login() {
           <TextInput placeholder="senha"></TextInput>
         </FormRow>
       </Form>
+      <Button title="Login" onPress={handleCadastrar}/>
+      <ButtonStyleTextDiv>
+        <ButtonText title="Cadastrar" onPress={handleCadastrar} />
+        <ButtonText title="Esqueceu sua senha?" onPress={handleCadastrar} />
+      </ButtonStyleTextDiv>
     </Container>
   );
 }
