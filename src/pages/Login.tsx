@@ -17,7 +17,7 @@ export default function Login() {
     navigation.navigate("Cadastrar");
   }
   function handleHome() {
-    navigation.navigate("HomeStack");
+    navigation.navigate("Home");
   }
   return (
     <Container>
@@ -32,7 +32,7 @@ export default function Login() {
           <TextInput placeholder="senha"></TextInput>
         </FormRow>
       </Form>
-      <Button title="Login" onPress={handleCadastrar}/>
+      <Button title="Login" onPress={handleHome}/>
       <ButtonStyleTextDiv>
         <ButtonText title="Cadastrar" onPress={handleCadastrar} />
         <ButtonText title="Esqueceu sua senha?" onPress={handleCadastrar} />

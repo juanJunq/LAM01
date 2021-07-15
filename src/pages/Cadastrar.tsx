@@ -13,11 +13,11 @@ import {ButtonCadastrar} from "../components/";
 
 export default function Cadastrar() {
   const navigation = useNavigation();
-  function handleCadastrar() {
-    navigation.navigate("Cadastrar");
+  function handleLogin() {
+    navigation.navigate("Login");
   }
   function handleHome() {
-    navigation.navigate("HomeStack");
+    navigation.navigate("Home");
   }
   return (
     <Container>
@@ -37,8 +37,8 @@ export default function Cadastrar() {
         </FormRow>
       </Form>
       <Side>
-        <ButtonCadastrar title="Cadastrar" onPress={handleCadastrar} />
-        <ButtonCadastrar title="Login" onPress={handleCadastrar}/>
+        <ButtonCadastrar title="Salvar" onPress={handleLogin}/>
+        <ButtonCadastrar title="Voltar" onPress={handleLogin}/>
       </Side>
     </Container>
   );
