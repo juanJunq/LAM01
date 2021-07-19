@@ -12,7 +12,7 @@ import {Button, ButtonText} from "../components";
 import { ButtonStyleTextDiv } from "../components/ButtonText/styles";
 
 export default function Login() {
-  const navigation = useNavigation();
+  const navigation = useNavigation(); 
   function handleCadastrar() {
     navigation.navigate("Cadastrar");
   }
