@@ -16,9 +16,6 @@ export default function Cadastrar() {
   function handleLogin() {
     navigation.navigate("Login");
   }
-  function handleHome() {
-    navigation.navigate("Home");
-  }
   return (
     <Container>
       <Form>

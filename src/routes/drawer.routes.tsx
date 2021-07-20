@@ -1,14 +1,30 @@
 import React from "react";
 import {createDrawerNavigator} from "@react-navigation/drawer";
-import {} from "../pages";
+import {Home, Login} from "../pages";
+import colors from "../styles/colors";
+import { HeaderImage } from "../components/Header/styles";
+
 
 const Drawer = createDrawerNavigator();
 
 export default function App(){
     return (
-        <Drawer.Navigator screenOptions={{headerShown: true}}>
-            {/* <Drawer.Screen name="Screen" component={}/>
-            <Drawer.Screen name="Screen" component={}/> */}
+        <Drawer.Navigator
+            screenOptions={{
+                headerShown: true,
+                headerStyle: { backgroundColor: `${colors.orange}`},
+                headerTintColor: "white",
+                headerTitle: "AllCourtMap"
+            }}
+        >
+            <Drawer.Screen 
+            name="Home" component={Home}
+            options={{drawerLabel:"Home"}}
+        />
+           <Drawer.Screen 
+            name="Login" component={Login}
+            options={{drawerLabel:"Login"}}
+        />
         </Drawer.Navigator>
     );
 }

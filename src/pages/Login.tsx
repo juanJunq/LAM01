@@ -17,7 +17,7 @@ export default function Login() {
     navigation.navigate("Cadastrar");
   }
   function handleHome() {
-    navigation.navigate("Home");
+    navigation.navigate("HomeStack");
   }
   return (
     <Container>
