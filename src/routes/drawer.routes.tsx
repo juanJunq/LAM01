@@ -1,6 +1,6 @@
 import React from "react";
 import {createDrawerNavigator} from "@react-navigation/drawer";
-import {Home, Login} from "../pages";
+import {Home, Config} from "../pages";
 import colors from "../styles/colors";
 import { HeaderImage } from "../components/Header/styles";
 
@@ -22,8 +22,8 @@ export default function App(){
             options={{drawerLabel:"Home"}}
         />
            <Drawer.Screen 
-            name="Login" component={Login}
-            options={{drawerLabel:"Login"}}
+            name="Config" component={Config}
+            options={{drawerLabel:"Configurações"}}
         />
         </Drawer.Navigator>
     );
