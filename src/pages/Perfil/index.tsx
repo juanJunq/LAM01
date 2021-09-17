@@ -9,9 +9,9 @@ import { Header } from "../../components";
 
 export default function Home() {
   const navigation = useNavigation();
-  function handleCadastrar() {
-    navigation.navigate("Cadastrar");
-  }
+  // function handleCadastrar() {
+  //   navigation.navigate("Cadastrar");
+  // }
   return (
     <Container>
         <Header
