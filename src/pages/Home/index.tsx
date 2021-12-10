@@ -2,7 +2,6 @@ import React, {
   useState,
   useEffect
 } from "react";
-import { useNavigation } from "@react-navigation/core";
 import {  
   Text, 
   View, 
@@ -14,12 +13,13 @@ import * as Location from 'expo-location';
 import {
   Container, ImageBg 
 } from "./styles";
+import { useAuth } from "../../hook/auth";
 
 
 
 
 export default function Home() {
-  const navigation = useNavigation();
+  const {user} = useAuth();
   // function handleCadastrar() {
   //   navigation.navigate("Cadastrar");
   // }
