@@ -36,9 +36,14 @@ export default function Home() {
         return;
       }
 
-      let location = await Location.getLastKnownPositionAsync({});
+      let location = await Location.getCurrentPositionAsync({accuracy:1});
       setLocation(location);
-      
+      setRegion({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+        latitudeDelta: 0.01,
+        longitudeDelta: 0.01
+      })
     })();
   }, []);
   let text = 'Waiting..';
