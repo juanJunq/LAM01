@@ -10,7 +10,6 @@ export default function LoginRoutes() {
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Cadastrar" component={Cadastrar} />
-      <Stack.Screen name="HomeStack" component={HomeStack} />
     </Stack.Navigator>
   );
 }

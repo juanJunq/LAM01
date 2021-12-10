@@ -37,7 +37,7 @@ export default function Login({ navigation }: LoginTypes) {
       if (data?.email && data.password) {
         await signIn(data);
       } else {
-        Alert.alert("Preencha todos os campos!!!");
+        Alert.alert("Preencha todos os campos.");
         setIsLoading(false);
       }
     } catch (error) {

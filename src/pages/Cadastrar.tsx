@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useNavigation } from "@react-navigation/core";
 import {
   Container,
   FormRow,
@@ -35,7 +34,7 @@ export default function Cadastrar({ navigation }: LoginTypes) {
       if (data?.email && data.name && data.password) {
         await register(data);
       } else {
-        Alert.alert("Preencha todos os campos!!!");
+        Alert.alert("Preencha todos os campos.");
       }
     } catch (error) {
       const err = error as AxiosError;
